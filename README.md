@@ -2,9 +2,11 @@
 
 [🇫🇷 Français](README.fr.md) | [🇬🇧 English](README.md)
 
-![Button](assets/button.png)
-
-![Notification](assets/notification.png)
+<p align="center">
+  <img src="assets/button.png" alt="Button" />
+  <br/><br/>
+  <img src="assets/notification.png" alt="Notification" />
+</p>
 
 ## Supported languages
 
