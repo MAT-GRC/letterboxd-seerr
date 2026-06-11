@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Letterboxd to Jellyseerr
+// @name         Letterboxd to Seerr
 // @namespace    http://tampermonkey.net/
 // @version      1.2
-// @description  Add a button to request movies directly on Jellyseerr from Letterboxd
+// @description  Add a button to request movies directly on Seerr from Letterboxd
 // @author       MAT-GRC
 // @match        https://letterboxd.com/film/*
 // @grant        GM_xmlhttpRequest
@@ -10,7 +10,7 @@
 // @license      MIT
 // ==/UserScript==
 
-const JELLYSEERR_URL = 'http://localhost:5055';
+const SEERR_URL = 'http://localhost:5055';
 const API_KEY = 'YOUR_API_KEY';
 
 const LANG = navigator.language.startsWith('fr') ? 'fr'
@@ -23,59 +23,59 @@ const LANG = navigator.language.startsWith('fr') ? 'fr'
 
 const MESSAGES = {
   en: {
-    added:       '✅ Added to Jellyseerr',
+    added:       '✅ Added to Seerr',
     exists:      '⚠️ Already requested',
     error:       '❌ Error: ',
-    unreachable: '❌ Cannot reach Jellyseerr',
-    button:      'Jellyseerr',
+    unreachable: '❌ Cannot reach Seerr',
+    button:      'Seerr',
     loading:     'Adding...',
   },
   fr: {
-    added:       '✅ Ajouté à Jellyseerr',
+    added:       '✅ Ajouté à Seerr',
     exists:      '⚠️ Déjà demandé',
     error:       '❌ Erreur : ',
-    unreachable: '❌ Jellyseerr inaccessible',
-    button:      'Jellyseerr',
+    unreachable: '❌ Seerr inaccessible',
+    button:      'Seerr',
     loading:     'Ajout...',
   },
   de: {
-    added:       '✅ Zu Jellyseerr hinzugefügt',
+    added:       '✅ Zu Seerr hinzugefügt',
     exists:      '⚠️ Bereits angefragt',
     error:       '❌ Fehler: ',
-    unreachable: '❌ Jellyseerr nicht erreichbar',
-    button:      'Jellyseerr',
+    unreachable: '❌ Seerr nicht erreichbar',
+    button:      'Seerr',
     loading:     'Wird hinzugefügt...',
   },
   es: {
-    added:       '✅ Añadido a Jellyseerr',
+    added:       '✅ Añadido a Seerr',
     exists:      '⚠️ Ya solicitado',
     error:       '❌ Error: ',
-    unreachable: '❌ Jellyseerr no disponible',
-    button:      'Jellyseerr',
+    unreachable: '❌ Seerr no disponible',
+    button:      'Seerr',
     loading:     'Añadiendo...',
   },
   it: {
-    added:       '✅ Aggiunto a Jellyseerr',
+    added:       '✅ Aggiunto a Seerr',
     exists:      '⚠️ Già richiesto',
     error:       '❌ Errore: ',
-    unreachable: '❌ Jellyseerr non raggiungibile',
-    button:      'Jellyseerr',
+    unreachable: '❌ Seerr non raggiungibile',
+    button:      'Seerr',
     loading:     'Aggiunta...',
   },
   pt: {
-    added:       '✅ Adicionado ao Jellyseerr',
+    added:       '✅ Adicionado ao Seerr',
     exists:      '⚠️ Já solicitado',
     error:       '❌ Erro: ',
-    unreachable: '❌ Jellyseerr indisponível',
-    button:      'Jellyseerr',
+    unreachable: '❌ Seerr indisponível',
+    button:      'Seerr',
     loading:     'A adicionar...',
   },
   ja: {
-    added:       '✅ Jellyseerrに追加しました',
+    added:       '✅ Seerrに追加しました',
     exists:      '⚠️ すでにリクエスト済み',
     error:       '❌ エラー: ',
-    unreachable: '❌ Jellyseerrに接続できません',
-    button:      'Jellyseerr',
+    unreachable: '❌ Seerrに接続できません',
+    button:      'Seerr',
     loading:     '追加中...',
   },
 };
@@ -138,7 +138,7 @@ function requestMovie(tmdbId, btn) {
 
   GM_xmlhttpRequest({
     method: 'POST',
-    url: `${JELLYSEERR_URL}/api/v1/request`,
+    url: `${SEERR_URL}/api/v1/request`,
     headers: {
       'Content-Type': 'application/json',
       'X-Api-Key': API_KEY
