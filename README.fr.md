@@ -22,9 +22,9 @@ Le script détecte automatiquement la langue de votre navigateur.
 
 ## Prérequis
 
-Votre instance Seerr doit être accessible en HTTPS depuis votre navigateur. En raison des restrictions de sécurité des navigateurs (politique mixed content), les URLs HTTP seront bloquées depuis des pages HTTPS comme Letterboxd.
+Votre instance Seerr doit être accessible depuis votre navigateur, que ce soit sur votre réseau local ou via un VPN comme Tailscale.
 
-Nous recommandons d'utiliser un reverse proxy (nginx, Caddy, NPM) avec un certificat SSL valide devant votre instance Seerr.
+> **Note :** `GM_xmlhttpRequest` (utilisé par Tampermonkey) contourne les restrictions mixed content du navigateur, donc HTTP fonctionne parfaitement. Si vous utilisez une extension basée sur `fetch`, HTTPS sera nécessaire.
 
 ## Installation
 
