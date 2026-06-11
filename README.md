@@ -1,11 +1,11 @@
-# Letterboxd → Jellyseerr
+# Letterboxd to Jellyseerr
 
 A userscript that adds a button on Letterboxd film pages to request movies directly on your Jellyseerr instance via the API.
 
 ## Features
 
 - One-click movie request from any Letterboxd film page
-- Direct API call — no redirect, no search
+- Direct API call, no redirect, no search
 - Success/error notifications inline
 - Works on any browser with a userscript manager
 
@@ -17,13 +17,13 @@ A userscript that adds a button on Letterboxd film pages to request movies direc
 
 2. Click [here](https://raw.githubusercontent.com/MAT-GRC/letterboxd-jellyseerr/main/letterboxd-jellyseerr.user.js) to install the script
 
-3. Edit the script and set your Jellyseerr URL and API key:
-   - `JELLYSEERR_URL` — your Jellyseerr URL (e.g. `http://192.168.1.29:5055`)
-   - `API_KEY` — found in Jellyseerr → Settings → General → API Key
+3. Edit the script and set your values:
+   - `JELLYSEERR_URL` - your Jellyseerr URL (e.g. http://localhost:5055)
+   - `API_KEY` - found in Jellyseerr, Settings, General, API Key
 
 ## Usage
 
-Open any film page on Letterboxd. A `+ Jellyseerr` button will appear next to the TMDB link. Click it to request the movie directly.
+Open any film page on Letterboxd. A + Jellyseerr button will appear next to the TMDB link. Click it to request the movie directly without leaving the page.
 
 ## License
 
