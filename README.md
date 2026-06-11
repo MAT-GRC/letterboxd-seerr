@@ -4,6 +4,12 @@
 
 A userscript that adds a button on Letterboxd film pages to request movies directly on your Jellyseerr instance via the API.
 
+## Supported languages
+
+🇬🇧 English, 🇫🇷 French, 🇩🇪 German, 🇪🇸 Spanish, 🇮🇹 Italian, 🇵🇹 Portuguese, 🇯🇵 Japanese
+
+The script automatically detects your browser language.
+
 ## Features
 
 - One-click movie request from any Letterboxd film page
