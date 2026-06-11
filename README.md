@@ -30,7 +30,7 @@ The script automatically detects your browser language.
 2. Click [here](https://raw.githubusercontent.com/MAT-GRC/letterboxd-seerr/main/letterboxd-seerr.user.js) to install the script
 
 3. Edit the script and set your values:
-   - `JELLYSEERR_URL` - your Seerr URL (e.g. http://localhost:5055)
+   - `SEERR_URL` - your Seerr URL (e.g. http://localhost:5055)
    - `API_KEY` - found in Seerr, Settings, General, API Key
 
 ## Usage

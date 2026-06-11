@@ -26,7 +26,7 @@ Le script détecte automatiquement la langue de votre navigateur.
 2. Cliquez [ici](https://raw.githubusercontent.com/MAT-GRC/letterboxd-seerr/main/letterboxd-seerr.user.js) pour installer le script
 
 3. Modifiez le script et renseignez vos valeurs :
-   - `JELLYSEERR_URL` - l'URL de votre Seerr (ex : http://localhost:5055)
+   - `SEERR_URL` - l'URL de votre Seerr (ex : http://localhost:5055)
    - `API_KEY` - disponible dans Seerr, Paramètres, Général, Clé d'API
 
 ## Utilisation
