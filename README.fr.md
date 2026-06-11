@@ -1,5 +1,7 @@
 # Letterboxd vers Jellyseerr
 
+[🇫🇷 Français](README.fr.md) | [🇬🇧 English](README.md)
+
 Un userscript qui ajoute un bouton sur les pages de films Letterboxd pour demander des films directement sur votre instance Jellyseerr via l'API.
 
 ## Fonctionnalites
